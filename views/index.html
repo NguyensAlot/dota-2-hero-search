@@ -27,7 +27,7 @@
         var app = angular.module("dotaHeroesApp", []);
         
         app.controller("heroDisplay", ['$scope', '$http', function($scope, $http) {
-            $http.get('heroes.json').success(function(response) {
+            $http.get('../scripts/heroes.json').success(function(response) {
                 $scope.heroes = response;
             });
             
