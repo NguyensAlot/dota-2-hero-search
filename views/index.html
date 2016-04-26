@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dota 2 Heroes</title>
+        
+        <script src="../lib/angular.min.js"></script>
+        <link rel="stylesheet" href="../lib/bootstrap.min.css">
+        
+    </head>
+    <body ng-app="dotaHeroesApp">
+        <h1 class="jumbotron text-center">Dota 2 Heroes</h1>
+        
+        <input type="text" class="form-control" ng-model="heroSearch" placeholder="Enter hero name or primary stat" autofocus>
+        
+        <br>
+        <div class="text-center" ng-controller="heroDisplay">
+            <div ng-repeat="hero in heroes | filter : heroSearch | orderBy : 'primary_stat'">
+                <p>{{hero.display_name}}</p>
+                <img ng-src="http://cdn.dota2.com/apps/dota2/images/heroes/{{hero.image_name}}_hphover.png">
+                <hr>
+            </div>
+        </div>
+        
+    </body>
+    <script>
+        var app = angular.module("dotaHeroesApp", []);
+        
+        app.controller("heroDisplay", ['$scope', '$http', function($scope, $http) {
+            $http.get('heroes.json').success(function(response) {
+                $scope.heroes = response;
+            });
+            
+        }]);
+    </script>
+</html>

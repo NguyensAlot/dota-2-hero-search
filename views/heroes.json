@@ -1,0 +1,74 @@
+[
+    {
+        "image_name": "antimage",
+        "id": 1,
+        "display_name": "Anti-Mage",
+        "primary_stat": "agility"
+    },
+    {
+        "image_name": "axe",
+        "id": 2,
+        "display_name": "Axe",
+        "primary_stat": "strength"
+    },
+    {
+        "image_name": "bane",
+        "id": 3,
+        "display_name": "Bane",
+        "primary_stat": "intelligence"
+    },
+    {
+        "image_name": "bloodseeker",
+        "id": 4,
+        "display_name": "Bloodseeker",
+        "primary_stat": "agility"
+    },
+    {
+        "image_name": "crystal_maiden",
+        "id": 5,
+        "display_name": "Crystal Maiden",
+        "primary_stat": "intelligence"
+    },
+    {
+        "image_name": "drow_ranger",
+        "id": 6,
+        "display_name": "Drow Ranger",
+        "primary_stat": "agility"
+    },
+    {
+        "image_name": "earthshaker",
+        "id": 7,
+        "display_name": "Earthshaker",
+        "primary_stat": "strength"
+    },
+    {
+        "image_name": "juggernaut",
+        "id": 8,
+        "display_name": "Juggernaut",
+        "primary_stat": "agility"
+    },
+    {
+        "image_name": "mirana",
+        "id": 9,
+        "display_name": "Mirana",
+        "primary_stat": "agility"
+    },
+    {
+        "image_name": "nevermore",
+        "id": 11,
+        "display_name": "Shadow Fiend",
+        "primary_stat": "agility"
+    },
+    {
+        "image_name": "morphling",
+        "id": 10,
+        "display_name": "Morphling",
+        "primary_stat": "agility"
+    },
+    {
+        "image_name": "phantom_lancer",
+        "id": 12,
+        "display_name": "Phantom Lancer",
+        "primary_stat": "agility"
+    }    
+]
